@@ -22,7 +22,6 @@ int main()
         int nextCheckpointDist; // distance to the next checkpoint
         int nextCheckpointAngle; // angle between your pod orientation and the direction of the next checkpoint
         cin >> x >> y >> nextCheckpointX >> nextCheckpointY >> nextCheckpointDist >> nextCheckpointAngle; cin.ignore();
-        int thrust = 0;
         int opponentX;
         int opponentY;
         int thrust;
