@@ -25,6 +25,7 @@ int main()
         int thrust = 0;
         int opponentX;
         int opponentY;
+        int thrust;
         cin >> opponentX >> opponentY; cin.ignore();
 
         // Write an action using cout. DON'T FORGET THE "<< endl"
@@ -43,6 +44,5 @@ int main()
         // You have to output the target position
         // followed by the power (0 <= thrust <= 100)
         // i.e.: "x y thrust"
-        
     }
 }
