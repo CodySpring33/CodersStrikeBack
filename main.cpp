@@ -24,6 +24,7 @@ int main()
         cin >> x >> y >> nextCheckpointX >> nextCheckpointY >> nextCheckpointDist >> nextCheckpointAngle; cin.ignore();
         int opponentX;
         int opponentY;
+        int thrust;
         cin >> opponentX >> opponentY; cin.ignore();
 
         // Write an action using cout. DON'T FORGET THE "<< endl"
@@ -33,6 +34,10 @@ int main()
         // You have to output the target position
         // followed by the power (0 <= thrust <= 100)
         // i.e.: "x y thrust"
-        cout << nextCheckpointX << " " << nextCheckpointY << " 80" << endl;
+        if(nextCheckpointAngle > 90 || nextCheckpointAngle < -90)
+            thrust = 10;
+        else
+            thrust = 100;
+        cout << nextCheckpointX << " " << nextCheckpointY << " " << thrust << endl;
     }
 }
